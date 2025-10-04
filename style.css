@@ -26,6 +26,7 @@ img {
     left: 0;
     right: 0;
     height: 8rem;
+    width: 100%;
     background: #f0f0f0;
     z-index: 1000;
     box-shadow: 0 .2rem .5rem rgba(0, 0, 0, 0.2);
@@ -42,7 +43,22 @@ img {
     text-decoration: none;
 }
 
-.header .navbar a {
+.navbar{
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 20px;
+}
+
+.navbar a:hover {
+    border-radius: 10%;
+    padding: 5px;
+    background-color: orange;
+    color: white;
+    font-weight: bold;
+}
+
+.header a {
     margin: 0 1rem;
     font-size: 1.6rem;
     color: #333;
@@ -50,7 +66,7 @@ img {
     transition: color 0.3s ease;
 }
 
-.header .navbar a.active, .header .navbar a:hover {
+.header .active, .header:hover {
     color: #007bff;
 }
 
@@ -184,11 +200,12 @@ img {
     padding: 2rem;
     border-radius: 10px;
     text-align: center;
+    box-shadow: 0 0.2rem 0.5rem #d76500;
     transition: box-shadow 0.3s ease;
 }
 
 .services-list div:hover {
-    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.2);
+     box-shadow: 0 0.6rem 0.9rem #d73600;
 }
 
 .services-list div i {
